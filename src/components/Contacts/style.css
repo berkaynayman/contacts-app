@@ -1,0 +1,54 @@
+#container{
+    width: 400px;
+    background-color: aliceblue;
+    padding: 20px;
+    font-size: 26px;
+    border-radius: 10px;
+}
+
+input{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    font-size: 22px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #f4f4f4;
+}
+input[name="fullname"]{
+    margin-bottom: 10px;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.list{
+    margin: 15px 0px;
+}
+
+.list > li{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.btn{
+    padding: 10px 0px;
+}
+.btn > button{
+    padding: 10px;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 0;
+}
