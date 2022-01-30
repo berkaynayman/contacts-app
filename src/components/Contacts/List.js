@@ -6,11 +6,11 @@ import Item from "./Item"
 function List() {
   const contacts = useSelector(contactSelectors.selectAll)
   console.log(contacts);
-  return <div>
+  return <ul className='list'>
     {
       contacts.map(contact => <Item key={contact.id} Item={contact} />)
     }
-  </div>;
+  </ul>;
 }
 
 export default List;
