@@ -1,13 +1,14 @@
 import React from 'react';
 import Form from './Form';
 import List from './List';
+import Header from './Header'
 
 function Contacts() {
-  return <div id='container'>
-      <h1>Contacts</h1>
+  return <>
+      <Header />
       <Form />
       <List />
-  </div>;
+  </>;
 }
 
 export default Contacts;

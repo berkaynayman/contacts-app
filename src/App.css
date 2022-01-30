@@ -10,6 +10,17 @@
   padding: 20px;
 }
 
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title > .deleteAll{
+  background-color: red;
+  padding: 10px;
+  cursor: pointer;
+}
+
 input {
   width: 100%;
   padding: 5px;
@@ -35,6 +46,16 @@ li {
   margin-bottom: 2px;
   display: flex;
   justify-content: space-between;
+  display: flex;
+}
+
+.list > li > span{
+  width: 33%;
+}
+
+.list > li > .edit{
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
@@ -46,4 +67,13 @@ li {
 .btn > button {
   padding: 5px;
   width: 60px;
+}
+
+.deleteBtn{
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  cursor: pointer;
 }
