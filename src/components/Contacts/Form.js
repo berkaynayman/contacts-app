@@ -10,13 +10,12 @@ function Form() {
         e.preventDefault()
         if(!name) return false
 
-        const names = name.split(",")
-        const data  = names.map((name) => ({id: nanoid(), name}))
-        dispatch(addContacts(data))
+        dispatch(addContact({ id: nanoid(), name}))
         setName("")
-
-        //names.forEach(name => dispatch(addContact({ id: nanoid(), name})))
-        //dispatch(addContact({ id: nanoid(), name}))
+        
+        //const names = name.split(",")
+        //const data  = names.map((name) => ({id: nanoid(), name}))
+        //dispatch(addContacts(data))
     }
 
     return (
@@ -25,7 +24,6 @@ function Form() {
                 <input placeholder='name' value={name} onChange={(e) => setName(e.target.value)} />
             </form>        
         </div>
-        
     );
 }
 
