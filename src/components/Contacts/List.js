@@ -5,7 +5,6 @@ import Item from "./Item"
 
 function List() {
   const contacts = useSelector(contactSelectors.selectAll)
-  console.log(contacts);
   return <ul className='list'>
     {
       contacts.map(contact => <Item key={contact.id} Item={contact} />)
